@@ -1,0 +1,273 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  left: 23%;
+  z-index: 2;
+}
+
+.header ul li {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 35px;
+  color: white;
+}
+
+.nav__link_active {
+  border-bottom: 2px solid white;
+}
+
+.header__lng {
+  text-transform: uppercase;
+}
+
+.header__lng span {
+  color: white;
+  margin-right: 8px;
+}
+
+.header__lng_active {
+  color: #b7b7b7 !important;
+}
+
+.intro {
+  background-image: url("./images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0 400px 0;
+  position: relative;
+}
+
+.intro h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  width: 70%;
+  margin-bottom: 53px;
+}
+
+.intro button {
+  background: #db2512;
+  padding: 11px 48px;
+  font-size: 18px;
+  color: white;
+}
+
+.intro__blocks {
+  display: flex;
+  gap: 21px;
+  position: absolute;
+  bottom: -10%;
+  left: 23%;
+}
+
+.intro__block {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  padding: 39px 48px 37px 39px;
+  min-width: 386px;
+  position: relative;
+}
+
+.intro__block p {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 21px 0 15px 0;
+}
+
+.intro__block span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #b7b7b7;
+}
+
+.intro__block::before {
+  content: "";
+  background-image: url(./images/phone.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10%;
+  left: 9%;
+}
+
+.intro__block-calendar::before {
+  content: "";
+  background-image: url(./images/calendar.svg);
+}
+
+.intro__block-location::before {
+  content: "";
+  background-image: url(./images/location.svg);
+}
+
+.services {
+  text-transform: uppercase;
+  margin: 99px auto;
+}
+
+.services h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.services a {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.services__blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.service__block {
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 93%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.service__block:hover .overlay {
+  display: block;
+}
+
+.service__block:hover::before {
+  content: url("./images/plus.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.service__block:hover::after {
+  content: "ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH";
+  width: 55%;
+  height: auto;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  z-index: 2;
+  color: white;
+}
+
+.about {
+  background-color: black;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 117px 0;
+}
+
+.about__info {
+  line-height: 150%;
+}
+
+.about__info h2 {
+  color: white !important;
+  font-weight: 700;
+  font-size: 30px;
+  /* or 45px */
+  width: 70%;
+  letter-spacing: 0.15em;
+  margin-bottom: 42px;
+}
+
+.about__info p {
+  color: #b7b7b7;
+  font-weight: 600;
+  font-size: 15px;
+  width: 70%;
+  margin-bottom: 48px;
+}
+
+.about__info a {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.process {
+  padding: 99px 0;
+  text-align: center;
+}
+
+.process h2 {
+  font-weight: 900;
+  font-size: 148px;
+  margin-bottom: 58px;
+}
+
+.process p {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.process__blocks {
+  display: flex;
+  gap: 19px;
+  margin-top: 92px;
+}
+
+.process_block {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  line-height: 150%;
+  padding: 31px 24px 26px 30px;
+  min-width: 386px;
+  text-align: left;
+}
+
+.process_block p {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.process_block span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #b7b7b7;
+}
